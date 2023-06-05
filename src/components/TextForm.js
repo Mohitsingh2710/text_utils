@@ -51,7 +51,7 @@ const handleOnchange=(e)=>{
      <div className="container my-3">
         <h1>Your Text Summary</h1>
         <p>Number of Characters : {text.length}</p>
-        <p>Number of Words : {text.length ? (text.split(" ").filter(item=>item!=="").length):0}</p>
+        <p>Number of Words : {text.length ? (text.split(/\s+/).filter(item=>item!=="").length):0}</p>
 
      </div>
 
