@@ -42,10 +42,10 @@ const handleOnchange=(e)=>{
         <textarea className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} onChange={handleOnchange} placeholder='Enter Text Here..'></textarea>
         </div>
 
-       <button className="btn btn-primary mx-3" onClick={handleUpclick} >Set To UpperCase</button>
-       <button className="btn btn-primary mx-3" onClick={handleLowclick} >Set To LowerCase</button>
-       <button className="btn btn-primary mx-3" onClick={handleClearclick} >Clear Text</button>
-       <button className="btn btn-primary mx-3" onClick={handleCopy} >Copy Text</button>
+       <button disabled={text.length===0?true:false} className="btn btn-primary mx-1 my-1" onClick={handleUpclick} >Set To UpperCase</button>
+       <button disabled={text.length===0?true:false} className="btn btn-primary mx-1 my-1" onClick={handleLowclick} >Set To LowerCase</button>
+       <button disabled={text.length===0?true:false} className="btn btn-primary mx-1 my-1" onClick={handleClearclick} >Clear Text</button>
+       <button disabled={text.length===0?true:false} className="btn btn-primary mx-1 my-1" onClick={handleCopy} >Copy Text</button>
     </div>
 
      <div className="container my-3">
